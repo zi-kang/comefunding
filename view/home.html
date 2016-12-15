@@ -1,0 +1,80 @@
+<header>
+	<div class="container clear">
+		<div class="head-left">
+			<img src="images/logo.png">
+		</div>
+		<ul class="head-right clear">
+			<li><a ui-sref="home">首页</a></li>
+			<li><a ui-sref="project.info">发起项目</a></li>
+			<li><a ui-sref="signProgram">节目报名</a></li>
+			<li><a><input type="text" name="" value="" placeholder=""></a></li>
+			<li><a ui-sref='login'>登录</a></li>
+			<li><a>注册</a></li>
+		</ul>
+	</div>
+</header>
+<div ui-view>
+<div class="funding-home">
+<!-- 轮播图的部分 -->
+	<div class="banner">
+	    <div class="imgBox" >
+	     	<img ng-class="{active:$index==showIndex}" ng-show='$index==showIndex' ng-repeat="item in imgSlide" ng-src="{{item}}" alt="">
+	    </div>
+	    <div class="banner-words">
+	    	<img src="images/homepage-banwords.png" alt="">
+	    </div>
+		
+		<div class="imgPoint">
+			<span ng-repeat="str in imgSlide" ng-class="{active:showIndex==$index}" ng-mouseover="end($index)" ng-mouseout="start()"></span>
+		</div>
+	</div>
+    <!-- 中间的内容 -->
+	<div class="home-audio">
+		<div class="container clear">
+			<div class="audio-item">
+				<h1 class="audio-title audio-cur">本期视频</h1>
+				<a href="#"><img src="images/play1.png" alt=""></a>
+			</div>
+			<div class="audio-item">
+				<h1 class="audio-title audio-last">往期视频</h1>
+				<a href="#"><img src="images/play1.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+	 <!-- 下面的选择项目 -->
+	<div class="home-title">
+		<span ng-class="{active:choiceIndex==$index}" ng-repeat="str in choices" ng-click="chooseFn($index)">{{str}}</span>
+	</div>
+	<div class="home-titleshow">
+	    <div class="container">
+			<div class="titleshow-item clear" ng-show="choiceIndex==0">
+				<a href="" class="item-left" ui-sref="home.homeItem1"><img src="images/tea.png" ></a>
+				<div class="item-right">
+					<p class="right1">英斯特哈博科技有限公司 <span>2016-08-10</span></p>
+					<p class="right2">【玄展】</p>
+					<p class="right3">【玄展】刚柔相济，一组有态度的茶器！</p>
+				</div>
+			</div>
+			<div class="titleshow-item clear" ng-show="choiceIndex==1">
+				<div style="padding:20px;">正在开发中</div>
+			</div>
+			<div class="titleshow-item clear" ng-show="choiceIndex==2">
+				<a href="" class="item-left" ui-sref="home.homeItem2"><img src="images/electrocar-small.gif" alt="" ></a>
+				<div class="item-right">
+					<p class="right1">英斯特哈勃 <span>2016-08-10</span></p>
+					<p class="right2">电动车</p>
+					<p class="right3">神奇的电动车</p>
+					<div class="right4">
+						<p>
+							<span class="icon-item1">已经达成: 0%</span>
+							<span class="icon-item2">已筹得: 1.00元</span>
+							<span class="icon-item3">剩余时间: 0天</span>
+						</p>
+						<p class="progress"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

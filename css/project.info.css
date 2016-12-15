@@ -1,0 +1,299 @@
+.project-item {
+  padding: 50px 0px 45px 80px;
+  background-color: #fff;
+}
+.project-item p {
+  margin-bottom: 10px;
+  line-height: 14px;
+  color: #A3A3A3;
+}
+.project-item p .starColor {
+  color: #DD3737;
+  margin-left: 5px;
+}
+.project-item p .tip-right {
+  float: right;
+}
+.project-item p .click-tip {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/checkbox.png) no-repeat 0 0;
+  background-size: contain;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+.project-item p .tip-deal {
+  color: #F28B41;
+  margin-left: 10px;
+}
+.project-item p .tip-deal:hover {
+  color: #5e5e5e;
+}
+.project-item .item-left {
+  float: left;
+  width: 600px;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+.project-item .item-left .item-name {
+  margin-bottom: 20px;
+  width: 540px;
+}
+.project-item .item-left .mt60 {
+  margin-top: 60px;
+}
+.project-item .item-left input {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #FAFAFA;
+  border: 1px solid #E1E1E1;
+  outline: none;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.project-item .item-left select {
+  height: 40px;
+  width: 260px;
+  border: 1px solid #E1E1E1;
+  outline: none;
+  background-color: #FAFAFA;
+  padding-left: 16px;
+  color: #474C52;
+  margin-right: 20px;
+  float: left;
+}
+.project-item .item-left select:nth-child(2n) {
+  margin-right: 0;
+}
+.project-item .item-left .especials {
+  margin-bottom: 20px;
+}
+.project-item .item-left .especials .item-especial {
+  float: left;
+  width: 260px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+.project-item .item-left .especials .item-especial:nth-child(2n) {
+  margin-right: 0px;
+}
+.project-item .item-left .especials .item-especial .phone-tip {
+  color: #3EC9A7;
+  line-height: 40px;
+  margin-bottom: 0px;
+  padding-top: 24px;
+  cursor: default;
+}
+.project-item .item-left .especials .item-especial .email-change {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  color: #3EC9A7;
+  line-height: 40px;
+  height: 40px;
+  margin-top: 24px;
+  cursor: default;
+}
+.project-item .item-left .item-next {
+  height: 44px;
+  width: 120px;
+  background-color: #3EC9A7;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 30px;
+}
+.project-item .item-left .item-next a {
+  height: 44px;
+  color: white;
+  line-height: 44px;
+}
+.project-item .item-right {
+  height: 636px;
+  width: 399px;
+  border-left: 1px solid #EFEFEF;
+  padding-left: 60px;
+  float: left;
+}
+.project-item .item-right .img-module {
+  margin-bottom: 40px;
+}
+.project-item .item-right .img-module label {
+  font-size: 12px;
+  color: #A3A3A3;
+  line-height: 12px;
+  margin-right: 15px;
+}
+.project-item .item-right .img-module .info-item {
+  width: 120px;
+  height: 40px;
+}
+.project-item .item-right .img-module .info-item .fileup {
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #F28B41;
+  color: #F28B41;
+  margin-top: 20px;
+  padding: 13px 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+.project-item .item-right .img-module .info-item .fileup:hover,
+.project-item .item-right .img-module .info-item .fileup.active {
+  background-color: #F28B41;
+  color: #fff;
+}
+.project-item .item-right .img-module .info-item input {
+  height: 20px;
+  width: 60px;
+  position: absolute;
+  margin: -10px -30px;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.project-item .item-right .right-img {
+  margin-bottom: 10px;
+}
+.project-item .item-right .right-img img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #EFEFEF;
+}
+.project-item .item-right .right-img .img-words {
+  position: absolute;
+  height: 24px;
+  line-height: 24px;
+  margin: -12px -24px;
+  top: 50%;
+  left: 50%;
+  font-size: 16px;
+  color: #A3A3A3;
+}
+.project-item .item-right .right-img1 {
+  width: 180px;
+  height: 150px;
+}
+.project-item .item-right .right-img2 {
+  width: 300px;
+  height: 200px;
+}
+.popup-lay .popup {
+  border-radius: 2px;
+  background-color: white;
+  z-index: 9999;
+  margin: 160px auto;
+  padding: 70px 60px;
+  overflow: hidden;
+  text-align: left;
+  box-sizing: border-box;
+  position: relative;
+}
+.popup-lay .popup-phone {
+  width: 420px;
+  height: 388px;
+}
+.popup-lay .phone-title {
+  font-size: 20px;
+  line-height: 26px;
+  color: #474C52;
+}
+.popup-lay .phone-num {
+  margin-top: 30px;
+  color: #A3A3A3;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+.popup-lay .getCode input {
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: #474C52;
+  font-size: 20px;
+  line-height: 20px;
+  width: 180px;
+  height: 30px;
+  border: 1px solid #ccc;
+  /* display: inline-block; */
+}
+.popup-lay .getCode p {
+  float: right;
+  width: 115px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #FFFFFF;
+  color: #F28B41;
+  border: 1px solid #F28B41;
+  font-size: 14px;
+  border-radius: 2px;
+  text-align: center;
+}
+.popup-lay .code input {
+  width: 100%;
+  height: 30px;
+  background-color: #FAFAFA;
+  padding-left: 15px;
+  border: 1px solid #E1E1E1;
+}
+.popup-lay .next-btn {
+  background-color: #3EC9A7;
+  margin-left: 52px;
+  width: 192px;
+  margin-top: 40px;
+  margin-right: 5px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
+.popup-lay .popup-email {
+  width: 520px;
+  height: 393px;
+}
+.popup-lay .popup-email .email-tip {
+  text-align: center;
+  font-size: 14px;
+  line-height: 19px;
+  color: #F28B41;
+  margin-top: 30px;
+}
+.popup-lay .input-email {
+  padding-left: 16px;
+  color: black;
+  background-color: #FAFAFA;
+  border: 1px solid #E1E1E1;
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 40px;
+}
+.popup-lay .chose-button {
+  margin-top: 40px;
+}
+.popup-lay .chose-button div {
+  float: left;
+  width: 192px;
+  color: white;
+  font-size: 14px;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 44px;
+  cursor: pointer;
+}
+.popup-lay .chose-button div.go-out {
+  background-color: #474C52;
+  margin-right: 15px;
+}
+.popup-lay .chose-button div.go-in {
+  background-color: #3EC9A7;
+}

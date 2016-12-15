@@ -1,0 +1,29 @@
+.register .agree {
+  margin-top: 28px;
+  color: #564D4D;
+}
+.register .agree span {
+  color: #3EC9A7;
+}
+.register .control-group .code {
+  margin-bottom: 10px;
+  height: 40px;
+}
+.register .control-group .code input {
+  width: 66.5%;
+  float: left;
+  margin-right: 10px;
+  height: 40px;
+}
+.register .control-group .code div {
+  float: right;
+  width: 120px;
+  color: #3EC9A7;
+  background-color: #fff;
+  border: 1px solid #3EC9A7;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  text-align: center;
+  border-radius: 4px;
+}

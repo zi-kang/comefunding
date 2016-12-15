@@ -1,0 +1,124 @@
+.homeItem1 {
+  background-color: #fafafa;
+  padding: 25px 0px 45px;
+}
+.homeItem1 .intro-detail {
+  color: #4E545D;
+  font-size: 20px;
+  border: 1px solid #F1F1F1;
+  background-color: #FFFFFF;
+  margin: 10px 0px;
+}
+.homeItem1 .intro-detail p {
+  text-align: center;
+  margin: 25px 0px;
+}
+.homeItem1 .intro-detail img {
+  width: 54px;
+  height: 40px;
+  vertical-align: middle;
+}
+.homeItem1 .intro-detail img.quo-left {
+  margin-left: 20px;
+}
+.homeItem1 .intro-detail img.quo-right {
+  margin-left: 720px;
+}
+.homeItem1 .item-firm {
+  background-color: #fff;
+  padding: 0px 25px;
+  margin-top: 10px;
+  border: 1px solid #F1F1F1;
+}
+.homeItem1 .item-firm .firm-left {
+  float: left;
+}
+.homeItem1 .item-firm .firm-left .title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.homeItem1 .item-firm .firm-left .firm {
+  font-size: 14px;
+  color: #333;
+}
+.homeItem1 .item-firm .firm-left .share {
+  margin: 20px 0px;
+}
+.homeItem1 .item-firm .firm-left .share span {
+  margin-right: 10px;
+}
+.homeItem1 .item-firm .firm-left .share span img {
+  width: 32px;
+  height: 32px;
+}
+.homeItem1 .item-firm .firm-right {
+  padding-top: 18px;
+  float: right;
+  width: 150px;
+}
+.homeItem1 .care-amaze {
+  height: 36px;
+  width: 120px;
+  display: inline-block;
+  border-radius: 2px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.homeItem1 .care-amaze img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.homeItem1 .care {
+  background-color: #F79148;
+}
+.homeItem1 .amazing {
+  background-color: #45C8A7;
+  margin-top: 12px;
+}
+.homeItem1 .project-intro {
+  height: 52px;
+  border: 1px solid #F1F1F1;
+  margin-top: 10px;
+  background-color: #FFFFFF;
+  color: #333333;
+  font-size: 16px;
+  padding-left: 29px;
+  line-height: 52px;
+}
+.homeItem1-box {
+  width: 800px;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+.homeItem1-box .imgBox {
+  width: 100%;
+}
+.homeItem1-box .imgBox img {
+  width: 100%;
+  display: block;
+}
+.homeItem1-box .bigImg-box {
+  background-color: #fff;
+}
+.homeItem1-box .bigImg-box .bigImg-tip {
+  padding: 0px 12px;
+  font-stretch: normal;
+  font-size: 18px;
+  line-height: 41px;
+  word-wrap: break-word;
+  word-break: break-all;
+  display: inline-block;
+  vertical-align: top;
+  height: 41px;
+  border: 3px solid #f1f1f1;
+  color: #50abf2;
+  min-width: 80px;
+  text-align: left;
+}

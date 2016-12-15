@@ -1,0 +1,41 @@
+<header>
+	<div class="container clear">
+		<div class="head-left">
+			<img src="images/logo.png">
+		</div>
+	</div>
+</header>
+<div class="login">
+	<form action="" name="loginForm" ng-model="loginForm">
+		<div class="login-box">
+			<p class="form-title">用户登录</p>
+			<div class="control-group">
+				<label class="control-label" for="input01">手机号</label>
+				<div class="controls">
+					<input type="text" class="input-control" name="phone" ng-model="phone" ng-pattern="/^(1[35678][0-9]{9})$/" required>
+				    <div class="tip" ng-show="loginForm.phone.$invalid && loginForm.phone.$dirty">手机号不能为空</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">密码</label>
+				<div class="controls">
+					<input type="password"  class="input-control" name="pwd" ng-model="pwd" ng-minlength="6" required>
+				    <div class="tip" ng-show="loginForm.pwd.$invalid && loginForm.pwd.$dirty">密码不能为空</div>
+				</div>
+			</div>
+			<div class="form-btn" ng-class="{active:loginForm.$valid}" ng-click="clickFn()">登录</div>
+			<p class="forget-tip" ui-sref="findPwd">忘记密码?</p>
+			<p class="reg-tip">没有账号?<span class="colorWords" ui-sref="register"> 现在注册</span></p>
+			<div class="form-three">
+				<h1 class="form-t-title">
+					<div>第三方登录</div>
+				</h1>
+				<div class="form-t-icon">
+					<span class="icon icon-weixin"></span>
+					<span class="icon icon-qq"></span>
+					<span class="icon icon-xinlang"></span>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

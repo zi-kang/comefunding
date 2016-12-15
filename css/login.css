@@ -1,0 +1,143 @@
+.login,
+.register {
+  background-color: #fafafa;
+  padding: 20px 0;
+}
+.login .login-box,
+.register .login-box,
+.login .register-box,
+.register .register-box {
+  width: 480px;
+  min-height: 350px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 50px 40px;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+}
+.login .form-title,
+.register .form-title {
+  text-align: center;
+  color: #474C52;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.login .control-group,
+.register .control-group {
+  margin: 15px 0;
+}
+.login .control-group .control-label,
+.register .control-group .control-label {
+  color: #A3A3A3;
+  font-size: 14px;
+  padding: 5px 0;
+  font-weight: 500;
+  display: inline-block;
+}
+.login .control-group .controls,
+.register .control-group .controls {
+  position: relative;
+}
+.login .control-group .controls .input-control,
+.register .control-group .controls .input-control {
+  width: 100%;
+  background-color: #fafafa;
+  height: 40px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+.login .control-group .controls .tip,
+.register .control-group .controls .tip {
+  position: absolute;
+  bottom: -17px;
+  right: 0px;
+  background: url(../images/warning.png) no-repeat left 5px center #FFF5F5;
+  color: #F64643;
+  font-size: 12px;
+  padding: 4px 0 5px 10px;
+  border: 1px solid #F64643;
+  line-height: 16px;
+  padding: 0px 10px 0px 25px;
+}
+.login .form-btn,
+.register .form-btn {
+  margin-top: 40px;
+  color: #fff;
+  width: 100%;
+  line-height: 44px;
+  line-height: 42px;
+  background: #bbb;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+}
+.login .form-btn.active,
+.register .form-btn.active {
+  background-color: #3EC9A7;
+}
+.login .forget-tip,
+.register .forget-tip {
+  text-align: right;
+  color: #564D4D;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.login .reg-tip,
+.register .reg-tip {
+  font-size: 16px;
+  margin-top: 30px;
+  text-align: center;
+}
+.login .reg-tip .colorWords,
+.register .reg-tip .colorWords {
+  color: #3EC9A7;
+  cursor: pointer;
+  font-size: 16px;
+}
+.login .form-three,
+.register .form-three {
+  margin: 80px 0px 20px;
+  position: relative;
+  border-top: 1px solid #dadadb;
+  height: 80px;
+}
+.login .form-three .form-t-title,
+.register .form-three .form-t-title {
+  position: absolute;
+  top: -10px;
+  width: 30%;
+  left: 35%;
+  font-size: 16px;
+  font-weight: 700;
+}
+.login .form-three .form-t-title div,
+.register .form-three .form-t-title div {
+  background: #fff;
+  text-align: center;
+}
+.login .form-three .form-t-icon,
+.register .form-three .form-t-icon {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 0px;
+}
+.login .form-three .form-t-icon .icon,
+.register .form-three .form-t-icon .icon {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.login .form-three .form-t-icon .icon-weixin,
+.register .form-three .form-t-icon .icon-weixin {
+  background: url(../images/wechat.png);
+}
+.login .form-three .form-t-icon .icon-qq,
+.register .form-three .form-t-icon .icon-qq {
+  background: url(../images/qq.png);
+}
+.login .form-three .form-t-icon .icon-xinlang,
+.register .form-three .form-t-icon .icon-xinlang {
+  background: url(../images/weibo.png);
+}

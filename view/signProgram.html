@@ -1,0 +1,73 @@
+<header>
+    <div class="container clear">
+        <div class="head-left">
+            <img src="images/logo.png">
+        </div>
+        <ul class="head-right clear">
+            <li><a ui-sref="home">首页</a></li>
+            <li><a ui-sref="project.info">发起项目</a></li>
+            <li><a ui-sref="signProgram">节目报名</a></li>
+            <li><a><input type="text" name="" value="" placeholder=""></a></li>
+            <li><a>157XXXX6591</a></li>
+            <li><a>你好</a></li>
+        </ul>
+    </div>
+</header>
+<div class="funding-project">
+	<div class="container">
+		<ul class="choice-item clear">
+			<li ng-class="{active:showTitle == $index}" ng-repeat="str in title">
+				{{str}}
+				<img src="images/bar.png" alt="">
+			</li>
+		</ul>
+		<form action="" method="post" name="projectForm" ng-model="projectForm">
+			<div ui-view>
+				<div class="signProgram-page1">
+					<div class="help-title">《一块投吧》节目报名须知
+					</div>
+					<ol class="help-list">
+                        <li>项目标准
+                            <ul>
+                                <li>项目需要有百姓触点，需要是和百生活息息相关的 to C 类项目。</li>
+                                <li>项目最好完成天使轮融资，进入Pre A/ A轮融资（或者有良好发展前景的天使轮项目）。</li>
+                                <li>项目最好是前瞻性行业，改变现有生活方式、习惯或对同行业有引领作用。</li>
+                                <li>有社会意义的项目（公益类）。</li>
+                            </ul>
+                        </li>
+                        <li>项目类型
+                            <ul>
+                                <li>TMT</li>
+                                <li>医疗健康</li>
+                                <li>节能环保</li>
+                                <li>高新科技</li>
+                                <li>先进制造</li>
+                                <li>新材料</li>
+                                <li>新能源</li>
+                                <li>文创类</li>
+                                <li>公益类</li>
+                                <li>创客等领域</li>
+                            </ul>
+                        </li>
+                        <li>项目创始人
+                            <ul>
+                                <li>创始人表达能力好，或团队中有善于表达的成员。</li>
+                                <li>有明星投资人投资的项目，优先考虑。</li>
+                                <li>节目录制前后 3 个月，不得参加其他同类型卫视节目</li>
+                            </ul>
+                        </li>
+                    </ol>
+				</div>
+				<div class="page1-footer clear">
+					<div class="check-box">
+					    <p><a href="">我已阅读并同意《众筹服务协议》</a></p>
+				    </div>
+				    <div class="right-btn" ng-click="titleNum(1)" ui-sref="signProgram.page2">
+				    	确认报名
+				    </div>
+				</div>
+				
+			</div>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,169 @@
+<div class="project-item clear">
+	<div class="item-left">
+	    <div class="item-name">
+		    <p class="clear">项目名称<span class="starColor">*</span><span class="tip-right">*为必填项</span></p>
+			<input type="text" required>
+	    </div>
+		<div class="item-name">
+			<p>所属行业<span class="starColor">*</span></p>
+			<div class="clear">
+				<select name="" id="">
+				<option value="1">111</option>
+				</select>
+				<select name="" id="">
+					<option value="2">222</option>
+				</select>
+			</div>
+		</div>
+		<div class="especials clear">
+		    <div class="item-especial">
+		    	<p>目标金额(元)<span class="starColor">*</span></p>
+				<input type="text" name="" value="" placeholder="最低限制为5000元人民币" required>
+		    </div>
+			<div class="item-especial">
+		    	<p>筹资天数(天)<span class="starColor">*</span></p>
+				<input type="text" name="" value="" placeholder="" required>
+		    </div>
+		</div>
+		<div class="item-name mt60">
+			<p>公司名字<span class="starColor">*</span></p>
+			<input type="text" name="" value="" placeholder="" required>
+		</div>
+		<div class="especials clear">
+		    <div class="item-especial">
+		    	<p>地区<span class="starColor">*</span></p>
+				<select  name="city" id='select-city'>
+                    <option value="北京市"> 北京市 </option>
+                    <option value="天津市"> 天津市 </option>
+                    <option value="上海市"> 上海市 </option>
+                    <option value="重庆市"> 重庆市 </option>
+                    <option value="河北省"> 河北省 </option>
+                    <option value="河南省"> 河南省 </option>
+                    <option value="云南省"> 云南省 </option>
+                    <option value="辽宁省"> 辽宁省 </option>
+                    <option value="黑龙江省"> 黑龙江省 </option>
+                    <option value="湖南省"> 湖南省 </option>
+                    <option value="安徽省"> 安徽省 </option>
+                    <option value="山东省"> 山东省 </option>
+					<option value="新疆维吾尔"> 新疆维吾尔 </option>
+					<option value="江苏省"> 江苏省 </option>
+					<option value="浙江省"> 浙江省 </option>
+					<option value="江西省"> 江西省 </option>
+					<option value="湖北省"> 湖北省 </option>
+					<option value="广西壮族"> 广西壮族 </option>
+					<option value="甘肃省"> 甘肃省 </option>
+					<option value="山西省"> 山西省 </option>
+					<option value="内蒙古"> 内蒙古 </option>
+					<option value="陕西省"> 陕西省 </option>
+					<option value="吉林省"> 吉林省 </option>
+					<option value="福建省"> 福建省 </option>
+					<option value="贵州省"> 贵州省 </option>
+					<option value="广东省"> 广东省 </option>
+					<option value="青海省"> 青海省 </option>
+					<option value="西藏"> 西藏 </option>
+					<option value="四川省"> 四川省 </option>
+					<option value="宁夏回族"> 宁夏回族 </option>
+					<option value="海南省"> 海南省 </option>
+					<option value="台湾省"> 台湾省 </option>
+					<option value="香港特别行政区"> 香港特别行政区 </option>
+					<option value="澳门特别行政区"> 澳门特别行政区 </option>
+                </select>
+		    </div>
+			<div class="item-especial">
+		    	<p>联系人<span class="starColor">*</span></p>
+				<input type="text" name="" value="" placeholder="" required>
+		    </div>
+		</div>
+		<div class="especials clear">
+		    <div class="item-especial">
+		    	<p>手机号<span class="starColor">*</span></p>
+				<input type="text" name="phone" ng-model="phone" placeholder="请输入您的手机号" ng-pattern="/^(1[35678][0-9]{9})$/">
+		    </div>
+			<div class="item-especial">
+		    	<p class="phone-tip" ng-click="showFn()">点击更换绑定</p>
+		    </div>
+		</div>
+		<div class="especials clear">
+		    <div class="item-especial posr">
+		    	<p>邮箱</p>
+				<input type="text" name="email" ng-model="email" ng-pattern="/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/">
+				<a class="email-change"  ng-click="showEmail()">点击绑定邮箱</a>
+		    </div>
+		</div>
+		<div class="item-name">
+		    <p><span class="click-tip" ng-click="addStyle"></span>我已同意并阅读<a class="tip-deal">《众筹服务协议》</a></p>
+	    </div>
+	    <div class="item-next">
+	    	<a ui-sref="project.detail" ng-click="addTitle()" ng-disabled="projectForm.$valid==true">下一步</a>
+	    </div>
+	</div>
+	<div class="item-right">
+		<div class="item-name">
+		    <p class="clear">封面图片<span class="starColor">*</span></p>
+		    <div class="img-module">
+		    	<div class="right-img right-img1 posr">
+					<img src="images/default.png" alt="">
+					<h4 class="img-words">缩略图</h4>
+				</div>
+				<label>尺寸：宽480px 高400px </label><label>图片格式：jpg、png、gif</label>
+				<div class="info-item posr">
+					<div class="fileup">上传图片
+					<input type="file" name="" value="" placeholder="">
+					</div>
+				</div>
+		    </div>
+	    </div>
+	    <div class="item-name">
+		    <p class="clear">详情页面头图<span class="starColor">*</span></p>
+		    <div class="img-module">
+		    	<div class="right-img right-img2 posr">
+					<img src="images/default.png" alt="">
+					<h4 class="img-words">缩略图</h4>
+				</div>
+				<label>尺寸：宽1200px 高800px</label><label>图片格式：jpg、png、gif</label>
+				<div class="info-item posr">
+					<div class="fileup">上传图片
+					<input type="file" name="" value="" placeholder="">
+					</div>
+				</div>
+		    </div>
+	    </div>
+	</div>
+</div>
+
+<div class="popup-lay"  ng-click="showFn()" ng-show="state">
+    <div class="popup-phone popup">
+        <div class="clear">
+	    	<button type="button" class="close"><span>×</span></button>
+	    </div>
+     	<p class="phone-title">请先验证手机</p>
+     	<p class="phone-num">手机号</p>
+     	<div class="clear getCode">
+     		<input type="text">
+     		<p>获取验证码</p>
+     	</div>
+        <div class="code">
+        	<p class="phone-num">验证码</p>
+        	<input type="text" name="">
+        </div>
+        <div class="next-btn">
+        	下一步
+        </div>
+    </div>
+</div>
+
+<div class="popup-lay" ng-click="showEmail()" ng-show="eState">
+    <div class="popup-email popup">
+        <div class="clear">
+	    	<button type="button" class="close"><span>×</span></button>
+	    </div>
+     	<p class="phone-title">绑定邮箱</p>
+     	<p class="phone-num">邮箱号</p>
+     	<input class="input-email" type="text" name="" value="" placeholder="">
+        <div class="chose-button clear">
+        	<div class="go-out">取消</div>
+        	<div class="go-in">验证邮箱</div>
+        </div>
+        <p class="email-tip">系统会发一封验证邮件到您的邮箱，请注意查收</p>
+    </div>
+</div>

@@ -1,0 +1,221 @@
+@keyframes ani {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.funding-home .banner {
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+.funding-home .banner .imgBox {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: absolute;
+}
+.funding-home .banner .imgBox img {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 700px;
+  display: block;
+}
+.funding-home .banner .imgBox img.active {
+  z-index: -1;
+}
+.funding-home .banner .imgBox img.ng-hide {
+  animation: ani 2s linear;
+}
+.funding-home .banner .banner-words {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.funding-home .banner .banner-words img {
+  width: 573px;
+  display: inline-block;
+  padding-top: 20%;
+}
+.funding-home .banner .imgPoint {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+  padding: 5px 0px;
+  text-align: center;
+}
+.funding-home .banner .imgPoint span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+.funding-home .banner .imgPoint span.active {
+  background-color: #3EC9A7;
+}
+.funding-home .home-audio {
+  background-color: #fafafa;
+  padding: 10px 0px;
+}
+.funding-home .home-audio .audio-item {
+  border: 1px solid #efefef;
+  width: 555px;
+  height: 120px;
+  position: relative;
+  background-color: #fff;
+  float: left;
+  margin-right: 10px;
+}
+.funding-home .home-audio .audio-item:hover {
+  border: 1px solid #3EC9A7;
+}
+.funding-home .home-audio .audio-item .audio-title {
+  width: 68px;
+  height: 22px;
+  color: white;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  line-height: 22px;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+.funding-home .home-audio .audio-item .audio-title.audio-cur {
+  background-color: #FC5F5F;
+}
+.funding-home .home-audio .audio-item .audio-title.audio-last {
+  background-color: #A4A4A4;
+}
+.funding-home .home-audio .audio-item a {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+.funding-home .home-audio .audio-item a img {
+  width: 100%;
+  height: 100%;
+}
+.funding-home .home-title {
+  height: 58px;
+  line-height: 58px;
+  border: 1px solid #efefef;
+  text-align: center;
+  background-color: #fff;
+  font-size: 0;
+}
+.funding-home .home-title span {
+  display: inline-block;
+  text-align: center;
+  color: #A9A9A9;
+  width: 147px;
+  font-size: 16px;
+  cursor: default;
+}
+.funding-home .home-title span.active {
+  border-bottom: 2px solid #3EC9A7;
+  color: #555;
+}
+.funding-home .home-title span:hover {
+  color: #555;
+}
+.funding-home .home-titleshow {
+  background-color: #fafafa;
+  padding-top: 20px;
+}
+.funding-home .home-titleshow .container {
+  position: relative;
+  padding-bottom: 180px;
+  height: 198px;
+}
+.funding-home .home-titleshow .titleshow-item {
+  position: absolute;
+  width: 100%;
+  height: 198px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #efefef;
+  background: #fff;
+}
+.funding-home .home-titleshow .titleshow-item:hover {
+  border: 1px solid #3EC9A7;
+}
+.funding-home .home-titleshow .titleshow-item .item-left {
+  float: left;
+  width: 240px;
+  height: 198px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.funding-home .home-titleshow .titleshow-item .item-left img {
+  width: 100%;
+  height: 100%;
+  border: 0 none;
+}
+.funding-home .home-titleshow .titleshow-item .item-right {
+  float: left;
+  padding-top: 15px;
+  line-height: 20px;
+}
+.funding-home .home-titleshow .titleshow-item .item-right .right1 {
+  font-size: 14px;
+  color: #3EC9A7;
+  margin-bottom: 10px;
+}
+.funding-home .home-titleshow .titleshow-item .item-right .right1 span {
+  margin-left: 20px;
+  color: #A3A3A3;
+}
+.funding-home .home-titleshow .titleshow-item .item-right .right2 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #474C52;
+  margin-bottom: 10px;
+}
+.funding-home .home-titleshow .titleshow-item .item-right .right3 {
+  font-size: 14px;
+  color: #A3A3A3;
+}
+.funding-home .home-titleshow .titleshow-item .item-right .right4 {
+  margin-top: 50px;
+}
+.funding-home .home-titleshow .titleshow-item .item-right .right4 span {
+  padding-left: 30px;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #BCBCBC;
+  display: inline-block;
+  width: 140px;
+}
+.funding-home .home-titleshow .titleshow-item .item-right .right4 span.icon-item1 {
+  background: url(../images/edit.png) no-repeat left center;
+}
+.funding-home .home-titleshow .titleshow-item .item-right .right4 span.icon-item2 {
+  background: url(../images/money.png) no-repeat left center;
+}
+.funding-home .home-titleshow .titleshow-item .item-right .right4 span.icon-item3 {
+  background: url(../images/time.png) no-repeat left center;
+}
+.funding-home .home-titleshow .titleshow-item .item-right .right4 .progress {
+  width: 840px;
+  height: 2px;
+  background: #e3e3e3;
+  margin-top: 10px;
+}

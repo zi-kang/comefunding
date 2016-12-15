@@ -1,0 +1,28 @@
+<header>
+	<div class="container clear">
+		<div class="head-left">
+			<img src="images/logo.png">
+		</div>
+		<ul class="head-right clear">
+			<li><a ui-sref="home">首页</a></li>
+			<li><a ui-sref="project.info">发起项目</a></li>
+			<li><a ui-sref="signProgram">节目报名</a></li>
+			<li><a><input type="text" name="" value="" placeholder=""></a></li>
+			<li><a>157XXXX6591</a></li>
+			<li><a>你好</a></li>
+		</ul>
+	</div>
+</header>
+<div class="funding-project">
+	<div class="container">
+		<ul class="choice-item clear">
+			<li ng-class="{active:showTitle == $index}" ng-repeat="str in title">
+				{{str}}
+				<img src="images/bar.png" alt="">
+			</li>
+		</ul>
+		<form action="" method="post" name="projectForm" ng-model="projectForm">
+			<div ui-view></div>
+		</form>
+	</div>
+</div>

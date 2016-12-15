@@ -1,0 +1,43 @@
+<header>
+	<div class="container clear">
+		<div class="head-left">
+			<img src="images/logo.png">
+		</div>
+	</div>
+</header>
+<div class="register">
+	<form action="" name="registerForm" ng-model="registerForm">
+		<div class="register-box">
+			<p class="form-title">找回密码</p>
+			<div class="control-group">
+				<label class="control-label" for="input01">手机号</label>
+				<div class="controls">
+					<input type="text" class="input-control" name="phone" ng-model="phone" ng-pattern="/^(1[35678][0-9]{9})$/" required>
+				    <div class="tip" ng-show="registerForm.phone.$invalid && registerForm.phone.$dirty">手机号不能为空</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">验证码</label>
+				<div class="code clear">
+					<input type="text" name="">
+					<div>获取验证码</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">新密码</label>
+				<div class="controls">
+					<input type="password"  class="input-control" name="pwd" ng-model="pwd" placeholder="请输入您的密码" ng-minlength="6" required placeholder="密码不能少于6位数,可以包含英文和特殊字符">
+				    <div class="tip" ng-show="registerForm.pwd.$invalid && registerForm.pwd.$dirty">您输入的密码有误,请重新输入!</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">确认新密码</label>
+				<div class="controls">
+					<input type="password"  class="input-control" name="pwd2" ng-model="pwd2" placeholder="密码不能少于6位数,可以包含英文和特殊字符">
+				    <div class="tip" ng-show="registerForm.pwd2.$dirty && pwd2 != pwd">输入的密码和上面的不一致</div>
+				</div>
+			</div>
+			<div class="form-btn" style="margin-top:40px;" ng-class="{active:registerForm.$valid && pwd2 == pwd}" ng-click="userReg( registerForm.$valid && pwd2 == pwd )">完成</div>
+		</div>
+	</form>
+</div>

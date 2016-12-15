@@ -1,0 +1,43 @@
+<div class="project-detail">
+	<div class="container">
+	    <div class="video-link">
+	    	<p class="detail-title">视频连接</p>
+			<input type="text" name="" value="" placeholder="">
+			<p class="video-tip">用视频的方式介绍你的项目，让用户更快的了解你的项目</p>
+	    </div>
+		<div class="video-link">
+	    	<p class="detail-title">一句话介绍</p>
+			<input type="text" name="" value="" placeholder="">
+	    </div>
+		<div class="project-intro">
+	    	<p class="detail-title">项目描述 <span class="colorStar">*</span></p>
+			<textarea id="myEditor" name="description" value="" class="editor" style="width:100%;height:434px;"></textarea>
+	    </div>
+	    <div class="detail-footer clear">
+		    <p class="example">不知道怎么写？看看项目填写规范及示例。 
+		    	<span ng-click="showFn()">点击查看</span>
+	    	</p>
+	    	<p class="step">
+	    		<a class="prev" ui-sref="project.info" ng-click="subTitle()">上一步</a>
+	    		<a class="next" ui-sref="project.support" ng-click="addTitle()">下一步</a>
+	    	</p>
+	    </div>
+	</div>
+	<div class="popup-lay" ng-show="state" ng-click="showFn()">
+	    <div class="popup">
+		    <div class="clear">
+		    	<button type="button" class="close"><span>×</span></button>
+		    </div>
+		    <div class="pop-content">
+		    	<p class="pop-title">项目介绍</p>
+		    	<p class="pop-main">Apple Watch 是苹果公司于2014年9月公布的一款智能手表，有Apple Watch、Apple Watch Sport 和Apple Watch Edition 三种风格不同的系列。Apple Watch 采用人造蓝宝石水晶屏幕与Force Touch触摸技术，有多种颜色可供选择</p>
+		    	<p class="pop-main">最近亮相的AppleWatch标志着苹果公司进入蓬勃发展的可穿戴市场。科技巨头希望售价349美元的Apple Watch能在价值数十亿美元的可穿戴市场空间占据优势。</p>
+		    	<img src="../images/watch.jpg" alt="">
+		    </div>
+		    <div class="pop-content">
+		    	<p class="pop-title">项目进度</p>
+		    	<p class="pop-main">Apple Watch Sport 共10款：起价为2588元，最高2988元；Apple Watch 共20款，起价为4188元，最高8288元；Apple Watch Edition 共8款，起价为74800元，最高126800元。三个系列都于2015年4月10日接受预定，4月24日起正式发售。首发地区包括中国大陆、中国香港、美国、日本、英国、法国、加拿大、澳大利亚。Apple Watch 于2015年4月10日开放试戴预约</p>
+		    </div>
+	    </div>
+	</div>
+</div>
